@@ -1,0 +1,35 @@
+.app-container {
+    /* background-image: url('https://img.freepik.com/free-photo/full-shot-african-kids-with-laptop_23-2148860436.jpg?ga=GA1.1.1737194729.1726150090&semt=ais_hybrid'); */
+    background-size: cover;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  

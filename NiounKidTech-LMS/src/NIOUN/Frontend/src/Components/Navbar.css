@@ -1,0 +1,34 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(109, 110, 89);
+    padding: 10px 40px;
+}
+.nav a{
+    text-decoration: none;
+    color: greenyellow;
+}
+.nav-logo{
+    font-family: Outfit;
+    font-size: 28px;
+    font-weight: 500;
+}
+.nav-logo span{
+    font-size: 18px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 30px;
+}
+.nav-login{
+    border-radius: 50px;
+    padding: 10px 38px;
+    background: #fff;
+    color: #262626;
+
+}
