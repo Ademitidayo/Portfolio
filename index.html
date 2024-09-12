@@ -8,6 +8,9 @@
   <script src="https://unpkg.com/react/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
   
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
   <!-- Inline CSS to replace Home.css -->
   <style>
     .home-container {
@@ -65,6 +68,26 @@
       padding: 20px;
       text-align: center;
       background-color: #007bff;
+      color: white;
+    }
+    .contact-section {
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    .contact-section a {
+      color: #007bff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.5em; /* Adjust the size of the icons */
+    }
+    .contact-section a:hover {
+      color: #0056b3;
+    }
+    .footer {
+      padding: 10px;
+      text-align: center;
+      background-color: #333;
       color: white;
     }
   </style>
@@ -128,32 +151,40 @@
           e('h2', null, 'Join NIOUNKID-TECH Today!'),
           e('p', null, 'Unlock your full learning potential with our powerful tools and resources.'),
           e('button', { className: 'cta-button' }, 'Sign Up Now')
+        ),
+
+        // Contact Section
+        e('section', { className: 'contact-section' },
+          e('h2', null, 'Contact Us'),
+          e('p', null,
+            'Email: ',
+            e('a', { href: 'mailto:support@niounkidtech.com' },
+              e('i', { className: 'fas fa-envelope' })
+            ),
+            e('span', null, ' support@niounkidtech.com')
+          ),
+          e('p', null,
+            'Follow us: ',
+            e('a', { href: 'https://twitter.com/YourTwitterHandle', target: '_blank' },
+              e('i', { className: 'fab fa-twitter' })
+            ),
+            e('a', { href: 'https://linkedin.com/in/YourLinkedInProfile', target: '_blank' },
+              e('i', { className: 'fab fa-linkedin' })
+            ),
+            e('a', { href: 'https://github.com/YourGitHubUsername', target: '_blank' },
+              e('i', { className: 'fab fa-github' })
+            )
+          )
+        ),
+
+        // Footer
+        e('footer', { className: 'footer' },
+          e('p', null, '©2024 NiounKidTech. All rights reserved.')
         )
       );
     }
 
     ReactDOM.render(e(Home), document.getElementById('root'));
   </script>
-  </section>
-
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>
-            Feel free to reach out to me via email at 
-            <a href="mailto:wawigladys@gmail.com">
-            <i class="fas fa-envelope"></i>
-            </a> 
-            or connect with me on 
-            <a href="https://www.linkedin.com/in/wawitimamwangi" target="_blank">
-    <i class="fab fa-linkedin"></i>
-  </a>.
-</p>
-
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Gladys Mwangi. All rights reserved.</p>
-    </footer>
 </body>
 </html>
