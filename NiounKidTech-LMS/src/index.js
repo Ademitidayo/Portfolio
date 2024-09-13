@@ -11,7 +11,18 @@ const app = express();
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/niounkidtech', {
+mongoose.set('strictQuery', true);
+
+// Retrieve the MongoDB URI from environment variables
+const uri = process.env.MONGO_URI;
+
+if (!uri) {
+  console.error('MONGO_URI environment variable is not defined');
+  process.exit(1);  // Exit the process with an error code
+}
+
+// Connect to MongoDB
+mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
