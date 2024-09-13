@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!-- Including React and ReactDOM from CDN -->
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Inline CSS to replace Home.css -->
+  <style>
+    .home-container {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero-content h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .hero-content p {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .cta-button {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1em;
+      margin: 10px 2px;
+      cursor: pointer;
+    }
+    .features {
+      padding: 20px;
+      background-color: #ffffff;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .feature-item {
+      background-color: #e9ecef;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .testimonials {
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    .testimonial-item {
+      margin-bottom: 20px;
+    }
+    .cta-section {
+      padding: 20px;
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+    }
+    .contact-section {
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    .contact-section a {
+      color: #007bff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.5em; /* Adjust the size of the icons */
+    }
+    .contact-section a:hover {
+      color: #0056b3;
+    }
+    .footer {
+      padding: 10px;
+      text-align: center;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    const e = React.createElement;
+
+    function Home() {
+      return e('div', { className: 'home-container' },
+
+        // Hero Section
+        e('section', { className: 'hero' },
+          e('div', { className: 'hero-content' },
+            e('h1', null, 'Welcome to NIOUNKID-TECH LMS'),
+            e('p', null, 'Empowering you to learn and grow with the best educational tools available.'),
+            e('button', { className: 'cta-button' }, 'Get Started')
+          )
+        ),
+
+        // Features Section
+        e('section', { className: 'features' },
+          e('h2', null, 'Features'),
+          e('div', { className: 'features-grid' },
+            e('div', { className: 'feature-item' },
+              e('h3', null, 'Interactive Courses'),
+              e('p', null, 'Engage with interactive, instructor-led courses designed for all levels.')
+            ),
+            e('div', { className: 'feature-item' },
+              e('h3', null, 'Assessments & Quizzes'),
+              e('p', null, 'Test your knowledge with quizzes and receive instant feedback.')
+            ),
+            e('div', { className: 'feature-item' },
+              e('h3', null, 'Progress Tracking'),
+              e('p', null, 'Track your learning progress and get insights into your development.')
+            ),
+            e('div', { className: 'feature-item' },
+              e('h3', null, 'Certifications'),
+              e('p', null, 'Earn certificates upon completion to showcase your achievements.')
+            )
+          )
+        ),
+
+        // Testimonials Section
+        e('section', { className: 'testimonials' },
+          e('h2', null, 'What Our Students Say'),
+          e('div', { className: 'testimonial-item' },
+            e('p', null, '"The courses are well-structured and easy to follow. I love the hands-on approach!"'),
+            e('h4', null, '- Jane Doe')
+          ),
+          e('div', { className: 'testimonial-item' },
+            e('p', null, '"This platform has helped me learn faster and earn certifications in no time!"'),
+            e('h4', null, '- John Smith')
+          )
+        ),
+
+        // Call to Action Section
+        e('section', { className: 'cta-section' },
+          e('h2', null, 'Join NIOUNKID-TECH Today!'),
+          e('p', null, 'Unlock your full learning potential with our powerful tools and resources.'),
+          e('button', { className: 'cta-button' }, 'Sign Up Now')
+        ),
+
+        // Contact Section
+        e('section', { className: 'contact-section' },
+          e('h2', null, 'Contact Us'),
+          e('p', null,
+            'Email: ',
+            e('a', { href: 'mailto:support@niounkidtech.com' },
+              e('i', { className: 'fas fa-envelope' })
+            ),
+            e('span', null, ' support@niounkidtech.com')
+          ),
+          e('p', null,
+            'Follow us: ',
+            e('a', { href: 'https://twitter.com/YourTwitterHandle', target: '_blank' },
+              e('i', { className: 'fab fa-twitter' })
+            ),
+            e('a', { href: 'https://linkedin.com/in/YourLinkedInProfile', target: '_blank' },
+              e('i', { className: 'fab fa-linkedin' })
+            ),
+            e('a', { href: 'https://github.com/YourGitHubUsername', target: '_blank' },
+              e('i', { className: 'fab fa-github' })
+            )
+          )
+        ),
+
+        // Footer
+        e('footer', { className: 'footer' },
+          e('p', null, '©2024 NiounKidTech. All rights reserved.')
+        )
+      );
+    }
+
+    ReactDOM.render(e(Home), document.getElementById('root'));
+  </script>
+</body>
+</html>
