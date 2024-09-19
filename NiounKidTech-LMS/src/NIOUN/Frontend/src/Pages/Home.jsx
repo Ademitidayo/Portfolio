@@ -7,7 +7,7 @@ function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Welcome to NIOUNKID-TECH LMS</h1>
+          <h1>Welcome to NIOUNKID-TECH</h1>
           <p>Empowering you to learn and grow with the best educational tools available.</p>
           <button className="cta-button">Get Started</button>
         </div>
