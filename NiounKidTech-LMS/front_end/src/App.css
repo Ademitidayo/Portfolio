@@ -1,0 +1,340 @@
+/* Landing Page Styles */
+.landing-page {
+  /* Global Landing Page Settings */
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.landing-page h1, 
+.landing-page h2, 
+.landing-page h3, 
+.landing-page h4, 
+.landing-page p {
+  margin: 0;
+}
+
+.landing-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.landing-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.landing-page button {
+  cursor: pointer;
+}
+
+/* Header Navigation */
+.landing-page header {
+  background-color: #1E90FF;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-page .nav-left, 
+.landing-page .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.landing-page .nav-left li {
+  margin-right: 20px;
+}
+
+.landing-page .nav-left li a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.landing-page .nav-left li a:hover {
+  color: #ffd700;
+}
+
+.landing-page .nav-right .nav-button {
+  background-color: #ffcc00;
+  color: #1E90FF;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 10px;
+}
+
+.landing-page .nav-right .nav-button:hover {
+  background-color: #ffd700;
+  color: #1E90FF;
+}
+
+/* Hero Section */
+.landing-page .hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffcc00;
+  padding: 50px 20px;
+  min-height: 60vh;
+  position: relative;
+}
+
+.landing-page .hero-content {
+  max-width: 50%;
+}
+
+.landing-page .hero-content h1 {
+  font-size: 3rem;
+  color: #1E90FF;
+  margin-bottom: 20px;
+}
+
+.landing-page .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.landing-page .cta-button {
+  background-color: #1E90FF;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.landing-page .cta-button:hover {
+  background-color: #ffd700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.landing-page .hero-image {
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(10%);
+}
+
+/* Features Section */
+.landing-page .features-section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.landing-page .features-section h2 {
+  font-size: 2.5rem;
+  color: #1E90FF;
+  margin-bottom: 40px;
+}
+
+.landing-page .features-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.landing-page .feature-box {
+  width: 23%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.landing-page .feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.landing-page .feature-box img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.landing-page .feature-box h3 {
+  font-size: 1.5rem;
+  color: #1E90FF;
+  margin-bottom: 10px;
+}
+
+.landing-page .feature-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Gamification Section */
+.landing-page .gamification-section {
+  background-color: #ffcc00;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.landing-page .gamification-section h2 {
+  font-size: 2.5rem;
+  color: #1E90FF;
+  margin-bottom: 20px;
+}
+
+.landing-page .badges-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.landing-page .badge-item {
+  width: 23%;
+  text-align: center;
+}
+
+.landing-page .badge-item img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.landing-page .badge-item h4 {
+  font-size: 1.2rem;
+  color: #1E90FF;
+}
+
+/* Testimonials Section */
+.landing-page .testimonials-section {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.landing-page .testimonials-section h2 {
+  font-size: 2.5rem;
+  color: #1E90FF;
+  margin-bottom: 40px;
+}
+
+.landing-page .testimonial-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.landing-page .testimonial {
+  width: 45%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page .testimonial p {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.landing-page .testimonial h4 {
+  font-size: 1.2rem;
+  color: #1E90FF;
+}
+
+/* CTA Section */
+.landing-page .cta-section {
+  background-color: #1E90FF;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.landing-page .cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.landing-page .cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.landing-page .cta-section .cta-button {
+  background-color: #ffcc00;
+  color: #1E90FF;
+}
+
+.landing-page .cta-section .cta-button:hover {
+  background-color: #fff;
+  color: #1E90FF;
+}
+
+/* Footer */
+.landing-page footer {
+  background-color: #1E90FF;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.landing-page footer p {
+  margin-bottom: 10px;
+}
+
+.landing-page .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.landing-page .social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.landing-page .social-icons a:hover {
+  color: #ffd700;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .landing-page .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .landing-page .hero-image {
+    display: none;
+  }
+
+  .landing-page .features-wrapper, 
+  .landing-page .badges-container, 
+  .landing-page .testimonial-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-page .feature-box, 
+  .landing-page .badge-item, 
+  .landing-page .testimonial {
+    width: 80%;
+  }
+}

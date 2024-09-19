@@ -1,0 +1,49 @@
+.learn-page {
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .learn-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .learn-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .learn-page .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .learn-page .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .learn-page .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .learn-page button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .learn-page button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,49 @@
+.teach-page {
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #8b4343;
+    border-radius: 8px;
+    background-color: #170c0c;
+    text-align: center;
+  }
+  
+  .teach-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .teach-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .teach-page .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .teach-page .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .teach-page .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .teach-page button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .teach-page button:hover {
+    background-color: #0056b3;
+  }
+  

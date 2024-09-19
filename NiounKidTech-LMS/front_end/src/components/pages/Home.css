@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #6d28d9; /* Lively Purple */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .cta-button {
+    background-color: #f59e0b; /* Lively Orange */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #eab308; /* Slightly darker orange */
+  }
+  
+  .hero-image {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    max-width: 300px;
+  }
+  
+  /* Features Section */
+  .features-section {
+    background-color: #ffffff; /* White background */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .feature-box {
+    background-color: #f3f4f6; /* Light Gray */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    flex: 1;
+  }
+  
+  .feature-box img {
+    max-width: 50px;
+  }
+  
+  .feature-box h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #4b5563; /* Darker Gray */
+  }
+  
+  /* Gamification Section */
+  .gamification-section {
+    background-color: #e0f2fe; /* Light Cyan */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .badges-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .badge-item {
+    text-align: center;
+  }
+  
+  .badge-item img {
+    max-width: 100px;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    background-color: #f9fafb; /* Very Light Gray */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #374151; /* Dark Gray */
+  }
+  
+  /* Call-to-Action Section */
+  .cta-section {
+    background-color: #4ade80; /* Lively Green */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .cta-section p {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1f2937; /* Dark Gray */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em; /* Adjust the size of the icons */
+  }
+  
+  .social-icons a:hover {
+    color: #d8a6a0; /* Soft Wine color for hover effect */
+  }
+  

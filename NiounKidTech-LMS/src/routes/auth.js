@@ -1,7 +1,7 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const passport = require('passport');
-const User = require('../models/user');
+const User = require('../models/User');
 const router = express.Router();
 
 // Signup route
@@ -15,9 +15,9 @@ router.post('/signup', async (req, res) => {
         const newUser = new User({ username, password: hashedPassword, role, is_approved });
         await newUser.save();
 
-        res.status(201).send('User signed up successfully. Awaiting approval if admin/teacher.');
+    res.status(201).json({ message: 'User signed up successfully. Awaiting approval if admin/teacher.' });
     } catch (error) {
-        res.status(400).send('Error signing up user: ' + error.message);
+        res.status(400).json({ message: 'Error signing up user: ' + error.message });
     }
 });
 
@@ -59,4 +59,3 @@ router.post('/approve_user/:id', async (req, res) => {
 });
 
 module.exports = router;
-

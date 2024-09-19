@@ -5,17 +5,33 @@ const router = express.Router();
 const auth = require('../middleware/auth');
 const checkRole = require('../middleware/checkRole');
 
-// Register a new user (for students and teachers)
+// Register a new user (for students, teachers, admins)
 router.post('/register', async (req, res) => {
-  const { username, password, role } = req.body;
-  if (!['teacher', 'student'].includes(role)) {
+  const { username, password, fullName, email, phone, address, role } = req.body;
+
+  // Validate the required fields
+  if (!username || !password || !fullName || !email || !phone || !address) {
+    return res.status(400).json({ message: 'All fields are required.' });
+  }
+
+  if (!['teacher', 'student', 'admin'].includes(role)) {
     return res.status(400).json({ message: 'Invalid role.' });
   }
 
-  const hashedPassword = await bcrypt.hash(password, 10);
-  const newUser = new User({ username, password: hashedPassword, role });
-  
   try {
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const newUser = new User({
+      username,
+      password: hashedPassword,
+      fullName,
+      email,
+      phone,
+      address,
+      role,
+      isApproved: false, // Default approval status
+    });
+
     await newUser.save();
     res.status(201).json({ message: 'User registered successfully. Awaiting approval.' });
   } catch (error) {
