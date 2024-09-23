@@ -7,7 +7,7 @@ const authRoutes = require('./routes/auth');  // Use new auth routes
 const coursesRoute = require('./routes/courses'); // Your previous routes
 const userRoutes = require('./routes/userRoutes');
 const checkRole = require('./routes/checkRole');
-const userRoutes = require('./models/User'); // Adjust the path as needed
+const Model = require('./models/User'); // Adjust the path as needed
 
 
 const app = express();
