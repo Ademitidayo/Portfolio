@@ -13,7 +13,7 @@ function Home() {
           <p>Our interactive learning platform helps kids master coding through fun lessons, projects, and quizzes.</p>
           <Link to="/signup" className="cta-button">Get Started</Link>
         </div>
-        <img src="" alt="Coding Kids" className="hero-image" />
+        <img src="/Kidscode.png" alt="Coding Kids" className="hero-image" />
       </section>
 
       {/* Features Section */}
@@ -21,22 +21,22 @@ function Home() {
         <h2>Why NiounKidTech?</h2>
         <div className="features-wrapper">
           <div className="feature-box">
-            <img src="" alt="Interactive" />
+            <img src="/Capture.PNG" alt="Interactive" />
             <h3>Interactive Lessons</h3>
             <p>Engaging lessons with interactive coding challenges for young minds.</p>
           </div>
           <div className="feature-box">
-            <img src="" alt="Progress Tracking" />
+            <img src="/Progresstracking.png" alt="Progress Tracking" />
             <h3>Progress Tracking</h3>
             <p>Track the learning progress of your child with personalized dashboards.</p>
           </div>
           <div className="feature-box">
-            <img src="" alt="Certifications" />
+            <img src="/Certificate.png" alt="Certifications" />
             <h3>Certifications</h3>
             <p>Kids earn cool certificates to celebrate their milestones.</p>
           </div>
           <div className="feature-box">
-            <img src="" alt="Quizzes" />
+            <img src="/Quiz.png" alt="Quizzes" />
             <h3>Fun Quizzes</h3>
             <p>Regular quizzes ensure that learning is both effective and enjoyable.</p>
           </div>
@@ -88,16 +88,16 @@ function Home() {
       {/* Footer */}
       <footer>
         <div className="footer-content">
-          <p>Follow us on social media:</p>
+          <p>Follow us</p>
           <div className="social-icons">
-            <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
+            <a href="https://x.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-square-x-twitter"></i>
             </a>
             <a href="https://linkedin.com/in/YourLinkedInProfile" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="https://github.com/YourGitHubUsername" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github"></i>
+              <i className="fa-brands fa-square-github"></i>
             </a>
           </div>
         </div>
@@ -108,4 +108,3 @@ function Home() {
 }
 
 export default Home;
-
