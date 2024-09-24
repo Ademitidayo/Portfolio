@@ -9,6 +9,7 @@ function Signup() {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
   const [role, setRole] = useState(''); // Default role is 'student'
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,16 +34,21 @@ function Signup() {
       console.log('Response status:', response.status);  // Log the status code
       console.log('Result:', result);  // Log the full result
 
-      if (!response.ok) throw new Error(result.error || 'Signup failed');
-      
-      alert(result.message || 'Signup successful! Awaiting approval.');
-    } catch (error) {
-      alert(error.message);
+      if (!response.ok) {
+        setErrorMessage(result.message || 'Signup failed. Please try again.');
+      } else {
+        // Handle successful signup (optional)
+        console.log('User signed up successfully', result);
+        setErrorMessage('');
     }
-  };
-
-  return (
-    <div className="signup-container">
+} catch (error) {
+    setErrorMessage('An error occurred during signup. Please try again.');
+}
+};
+return (
+  <div className="signup-container">
+    {/* Error banner for displaying messages */}
+    {errorMessage && <div className="error-banner">{errorMessage}</div>}
       <h2>Create Account</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -88,9 +94,8 @@ function Signup() {
         </select>
         <button type="submit">Sign Up</button>
       </form>
-      <p>
+  
         Already have an account? <a href="/login">Sign In</a>
-      </p>
     </div>
   );
 }

@@ -5,7 +5,8 @@ import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
 import Teach from './components/pages/Teach';
 import Learn from './components/pages/Learn';
-import Home from './components/pages/Home'; // Ensure you use Home if needed
+import Home from './components/pages/Home';
+import Admin from './components/pages/Admin'; // Import Admin component
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <div className="nav-right">
               <Link to="/login" className="nav-button">Sign In</Link>
               <Link to="/signup" className="nav-button">Create Account</Link>
+              <Link to="/Admin" className="nav-button">Admin</Link>
               
             </div>
           </nav>
@@ -33,6 +35,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/teach" element={<Teach />} />
           <Route path="/learn" element={<Learn />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
     </Router>

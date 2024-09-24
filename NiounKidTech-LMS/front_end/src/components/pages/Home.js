@@ -13,7 +13,7 @@ function Home() {
           <p>Our interactive learning platform helps kids master coding through fun lessons, projects, and quizzes.</p>
           <Link to="/signup" className="cta-button">Get Started</Link>
         </div>
-        <img src="/path-to-fun-illustration.png" alt="Coding Kids" className="hero-image" />
+        <img src="" alt="Coding Kids" className="hero-image" />
       </section>
 
       {/* Features Section */}
@@ -21,22 +21,22 @@ function Home() {
         <h2>Why NiounKidTech?</h2>
         <div className="features-wrapper">
           <div className="feature-box">
-            <img src="/path-to-icon.png" alt="Interactive" />
+            <img src="" alt="Interactive" />
             <h3>Interactive Lessons</h3>
             <p>Engaging lessons with interactive coding challenges for young minds.</p>
           </div>
           <div className="feature-box">
-            <img src="/path-to-icon.png" alt="Progress Tracking" />
+            <img src="" alt="Progress Tracking" />
             <h3>Progress Tracking</h3>
             <p>Track the learning progress of your child with personalized dashboards.</p>
           </div>
           <div className="feature-box">
-            <img src="/path-to-icon.png" alt="Certifications" />
+            <img src="" alt="Certifications" />
             <h3>Certifications</h3>
             <p>Kids earn cool certificates to celebrate their milestones.</p>
           </div>
           <div className="feature-box">
-            <img src="/path-to-icon.png" alt="Quizzes" />
+            <img src="" alt="Quizzes" />
             <h3>Fun Quizzes</h3>
             <p>Regular quizzes ensure that learning is both effective and enjoyable.</p>
           </div>

@@ -1,51 +1,98 @@
+/* Signup.css */
+
+/* Signup Container Styles */
 .signup-container {
-  width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Fixed width for uniformity */
+  margin: 0 auto; /* Center alignment */
+  padding: 20px; /* Internal spacing */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
+/* Header Styles */
 .signup-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below title */
 }
 
+/* Input and Select Fields */
 .signup-container input,
 .signup-container select {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Internal padding */
+  margin: 10px 0; /* Vertical margin */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded edges */
+  transition: border-color 0.3s; /* Smooth transition for focus */
 }
 
+/* Change border color on focus */
+.signup-container input:focus,
+.signup-container select:focus {
+  border-color: #007BFF; /* Highlight border on focus */
+}
+
+/* Button Styles */
 .signup-container button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
+  width: 100%; /* Full width for button */
+  padding: 10px; /* Internal padding */
+  background-color: #007BFF; /* Primary button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded edges */
+  cursor: pointer; /* Pointer on hover */
+  margin-top: 10px; /* Margin above button */
+  transition: background-color 0.3s; /* Smooth transition for hover */
 }
 
+/* Button Hover Effect */
 .signup-container button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker shade on hover */
 }
 
+/* Paragraph and Link Styles */
 .signup-container p {
-  text-align: center;
-  margin-top: 10px;
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Margin above paragraph */
 }
 
+/* Link Styles */
 .signup-container a {
-  color: #007BFF;
-  text-decoration: none;
+  color: #007BFF; /* Link color */
+  text-decoration: none; /* No underline */
 }
 
+/* Link Hover Effect */
 .signup-container a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Popup Notification Styles */
+.popup {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Fade animation */
+  position: fixed; /* Fixed position */
+  top: 20px; /* Distance from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center adjustment */
+  padding: 15px; /* Internal padding */
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* Text color */
+  z-index: 1000; /* Stack above other content */
+  width: 80%; /* Responsive width */
+  max-width: 400px; /* Max width limit */
+  text-align: center; /* Center the text */
+}
+
+.popup.show {
+  opacity: 1; /* Fully visible when shown */
+}
+
+.popup.error {
+  background-color: #f44336; /* Red for error messages */
+}
+
+.popup.success {
+  background-color: #4CAF50; /* Green for success messages */
 }
